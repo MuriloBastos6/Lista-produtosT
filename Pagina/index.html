@@ -1,0 +1,2058 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Catálogo de Produtos — Lista por Categorias</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="brand">
+                <img src="./[2] CATÁLOGO DE PRODUTOS - LIBANÊS CEREALISTA.png" alt="Logo" class="logo">
+                <div class="brand-text">
+                    <h2 class="small">LIBANÊS CEREALISTA</h2>
+                    <h1 class="title">CONHEÇA NOSSOS <span>PRODUTOS</span></h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="search-container">
+        <input type="search" id="search-input" placeholder="Buscar produtos..." class="search-bar">
+    </div>
+
+    <div id="search-results" class="cards-grid" style="display: none;"></div>
+
+    <main id="top" class="container main">
+
+        <!-- Seção de Promoção -->
+        <section id="promocao" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Promoção</h2>
+                    <p class="category-sub">Itens em promoção</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 1">
+                    <div class="card-body">
+                        <p class="ref">REF.: P001</p>
+                        <h4 class="card-title">Produto em Promoção 1</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 50,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 48,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 1.0</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 2">
+                    <div class="card-body">
+                        <p class="ref">REF.: P002</p>
+                        <h4 class="card-title">Produto em Promoção 2</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 45,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 43,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 0.5</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1607478900766-efe13248b125?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 3">
+                    <div class="card-body">
+                        <p class="ref">REF.: P003</p>
+                        <h4 class="card-title">Produto em Promoção 3</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 60,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 58,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 2.0</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 4">
+                    <div class="card-body">
+                        <p class="ref">REF.: P004</p>
+                        <h4 class="card-title">Produto em Promoção 4</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 70,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 68,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 1.5</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 5">
+                    <div class="card-body">
+                        <p class="ref">REF.: P005</p>
+                        <h4 class="card-title">Produto em Promoção 5</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 55,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 53,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: KG • Peso: 1.0</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 6">
+                    <div class="card-body">
+                        <p class="ref">REF.: P006</p>
+                        <h4 class="card-title">Produto em Promoção 6</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 40,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 38,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 0.8</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 7">
+                    <div class="card-body">
+                        <p class="ref">REF.: P007</p>
+                        <h4 class="card-title">Produto em Promoção 7</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 63,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 1.2</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 8">
+                    <div class="card-body">
+                        <p class="ref">REF.: P008</p>
+                        <h4 class="card-title">Produto em Promoção 8</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 75,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 73,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 2.5</div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1572441710266-0d1a7b0901a9?w=800&q=60&auto=format&fit=crop"
+                        alt="Promoção 9">
+                    <div class="card-body">
+                        <p class="ref">REF.: P009</p>
+                        <h4 class="card-title">Produto em Promoção 9</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 80,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 78,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: KG • Peso: 1.0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seções de produtos por categoria (cada categoria como 'página' vertical) -->
+        <section id="amendoins" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>amendoins, castanhas, amendoas e nozes </h2>
+                    <p class="category-sub">Amendoins e itens relacionados</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA W4 T. 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 467</p>
+                        <h4 class="card-title">AMENDOA W4 T. 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 572,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 555,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA W4 T.S 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 585</p>
+                        <h4 class="card-title">AMENDOA W4 T.S 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 572,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 555,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CRUA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2405</p>
+                        <h4 class="card-title">AMENDOA CRUA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 638,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 620,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CRUA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2444</p>
+                        <h4 class="card-title">AMENDOA CRUA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 321,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 312,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA DEFUMADA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3105</p>
+                        <h4 class="card-title">AMENDOA DEFUMADA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 700,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 680,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA DEFUMADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2445</p>
+                        <h4 class="card-title">AMENDOA DEFUMADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 352,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 342,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA LAMINADA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3865</p>
+                        <h4 class="card-title">AMENDOA LAMINADA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 618,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 600,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA LAMINADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3866</p>
+                        <h4 class="card-title">AMENDOA LAMINADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 311,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 302,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA TORRADA SALGADA 10 KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2446</p>
+                        <h4 class="card-title">AMENDOA TORRADA SALGADA 10 KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 680,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 660,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA TORRADA SALGADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2781</p>
+                        <h4 class="card-title">AMENDOA TORRADA SALGADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 342,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 332,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA TORRADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2779</p>
+                        <h4 class="card-title">AMENDOA TORRADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 351,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 341,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CONFEITADA COLORIDA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3391</p>
+                        <h4 class="card-title">AMENDOA CONFEITADA COLORIDA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 453,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 440,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CONFEITADA BRANCA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3390</p>
+                        <h4 class="card-title">AMENDOA CONFEITADA BRANCA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 453,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 440,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CONFEITADA BRANCA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3404</p>
+                        <h4 class="card-title">AMENDOA CONFEITADA BRANCA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 226,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 220,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOA CONFEITADA COLORIDA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3399</p>
+                        <h4 class="card-title">AMENDOA CONFEITADA COLORIDA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 226,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 220,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CARAMELIZADO C/ COCO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3368</p>
+                        <h4 class="card-title">AMENDOIM CARAMELIZADO C/ COCO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 89,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 87,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CARAMELIZADO C/ GERGELIM 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3372</p>
+                        <h4 class="card-title">AMENDOIM CARAMELIZADO C/ GERGELIM 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 89,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 87,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CARAMELIZADO C/ MEL 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3380</p>
+                        <h4 class="card-title">AMENDOIM CARAMELIZADO C/ MEL 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 89,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 87,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CARAMELIZADO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3367</p>
+                        <h4 class="card-title">AMENDOIM CARAMELIZADO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 89,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 87,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CASCA TORRADO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 465</p>
+                        <h4 class="card-title">AMENDOIM CASCA TORRADO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 73,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 71,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM FRITO C/ALHO C/PELE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2643</p>
+                        <h4 class="card-title">AMENDOIM FRITO C/ALHO C/PELE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 62,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 60,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM FRITO C/ALHO S/PELE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2644</p>
+                        <h4 class="card-title">AMENDOIM FRITO C/ALHO S/PELE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 63,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM FRITO C/SAL C/PELE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2570</p>
+                        <h4 class="card-title">AMENDOIM FRITO C/SAL C/PELE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 59,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 57,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM FRITO C/SAL S/PELE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3021</p>
+                        <h4 class="card-title">AMENDOIM FRITO C/SAL S/PELE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 63,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CASCA CRU 12,5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2263</p>
+                        <h4 class="card-title">AMENDOIM CASCA CRU 12,5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 72,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 70,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 12.5</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM CASCA CRU 25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3821</p>
+                        <h4 class="card-title">AMENDOIM CASCA CRU 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 144,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 140,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM HANNER 25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 109</p>
+                        <h4 class="card-title">AMENDOIM HANNER 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM HANNER 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2419</p>
+                        <h4 class="card-title">AMENDOIM HANNER 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 30,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 29,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM HPS 25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3505</p>
+                        <h4 class="card-title">AMENDOIM HPS 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 631,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 612,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM HPS 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2443</p>
+                        <h4 class="card-title">AMENDOIM HPS 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 128,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 124,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM OVINHO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2283</p>
+                        <h4 class="card-title">AMENDOIM OVINHO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 63,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 61,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE  25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 103</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 206,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 200,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2629</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 43,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 42,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO C/ SAL 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2452</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO C/ SAL 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 74,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 72,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO C/ SAL 25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 150</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO C/ SAL 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 185,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 180,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO C/ SAL 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2453</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO C/ SAL 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 39,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 38,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO S/ SAL 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2450</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO S/ SAL 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 74,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 72,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO S/ SAL 25KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 7</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO S/ SAL 25KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 185,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 180,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 25.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="AMENDOIM S/ PELE TORRADO S/ SAL 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2451</p>
+                        <h4 class="card-title">AMENDOIM S/ PELE TORRADO S/ SAL 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 39,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 38,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU CARAMELIZADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2508</p>
+                        <h4 class="card-title">CASTANHA DE CAJU CARAMELIZADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 206,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 200,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA CAJU CARAMELIZADA AÇAÍ 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4138</p>
+                        <h4 class="card-title">CASTANHA CAJU CARAMELIZADA AÇAÍ 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 206,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 200,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 ASSADA 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2442</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 ASSADA 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 724,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 703,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 ASSADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2524</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 ASSADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 321,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 312,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 CRUA 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3441</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 CRUA 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 724,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 703,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 CRUA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2523</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 CRUA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 321,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 312,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T. 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3408</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T. 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 724,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 703,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T. 22.68KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2273</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T. 22.68KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 1.448,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 1.406,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 22.68</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T. 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2271</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T. 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 321,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 312,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T.S 11.34KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3409</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T.S 11.34KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 724,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 703,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 11.34</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T.S 22.68KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 459</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T.S 22.68KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 1.448,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 1.406,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 22.68</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DE CAJU W1 T.S 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 285</p>
+                        <h4 class="card-title">CASTANHA DE CAJU W1 T.S 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 321,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 312,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA MEDIA PARATINI 20KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3534</p>
+                        <h4 class="card-title">CASTANHA DO PARA MEDIA PARATINI 20KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 2.884,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 2.800,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 20.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA MEDIA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2250</p>
+                        <h4 class="card-title">CASTANHA DO PARA MEDIA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 723,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 702,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA PEQUENA PARATINI 20KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3533</p>
+                        <h4 class="card-title">CASTANHA DO PARA PEQUENA PARATINI 20KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 2.637,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 2.560,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 20.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA PEQUENA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2340</p>
+                        <h4 class="card-title">CASTANHA DO PARA PEQUENA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 661,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 642,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA QUEBRADA PARATINI 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2289</p>
+                        <h4 class="card-title">CASTANHA DO PARA QUEBRADA PARATINI 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 1.339,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 1.300,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA QUEBRADA PARATINI 20KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3532</p>
+                        <h4 class="card-title">CASTANHA DO PARA QUEBRADA PARATINI 20KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 2.163,00</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 2.100,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 20.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CASTANHA DO PARA QUEBRADA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2251</p>
+                        <h4 class="card-title">CASTANHA DO PARA QUEBRADA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 543,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 527,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE BRANCO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4046</p>
+                        <h4 class="card-title">CROCANTE DOCE BRANCO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 154,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 150,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE BRANCO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4047</p>
+                        <h4 class="card-title">CROCANTE DOCE BRANCO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 77,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 75,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE BANOFFE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4311</p>
+                        <h4 class="card-title">CROCANTE DOCE BANOFFE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 67,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE COCO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4312</p>
+                        <h4 class="card-title">CROCANTE DOCE COCO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 67,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE IOGURTE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4310</p>
+                        <h4 class="card-title">CROCANTE DOCE IOGURTE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 67,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 65,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE BACON 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3818</p>
+                        <h4 class="card-title">CROCANTE BACON 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 71,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 69,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE BACON BALSAMO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3081</p>
+                        <h4 class="card-title">CROCANTE BACON BALSAMO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE C/ SALSA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2534</p>
+                        <h4 class="card-title">CROCANTE C/ SALSA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 71,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 69,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE C/ SALSA BALSAMO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2234</p>
+                        <h4 class="card-title">CROCANTE C/ SALSA BALSAMO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE COM PIMENTA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2535</p>
+                        <h4 class="card-title">CROCANTE COM PIMENTA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 71,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 69,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE C/ PIMENTA BALSAMO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2238</p>
+                        <h4 class="card-title">CROCANTE C/ PIMENTA BALSAMO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DE CHOCOLATE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2833</p>
+                        <h4 class="card-title">CROCANTE DE CHOCOLATE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 75,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 73,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DE CHOCOLATE 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3125</p>
+                        <h4 class="card-title">CROCANTE DE CHOCOLATE 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 150,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 146,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE CHOCOLATE BRANCO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3753</p>
+                        <h4 class="card-title">CROCANTE CHOCOLATE BRANCO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 77,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 75,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE CHOCOLATE BRANCO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3752</p>
+                        <h4 class="card-title">CROCANTE CHOCOLATE BRANCO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 154,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 150,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE CONFEITADO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2512</p>
+                        <h4 class="card-title">CROCANTE CONFEITADO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 154,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 150,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE CONFEITADO 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2537</p>
+                        <h4 class="card-title">CROCANTE CONFEITADO 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 77,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 75,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE DOCE 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2511</p>
+                        <h4 class="card-title">CROCANTE DOCE 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 63,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 61,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE JAPONES BALSAMO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2236</p>
+                        <h4 class="card-title">CROCANTE JAPONES BALSAMO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE JAPONES 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2546</p>
+                        <h4 class="card-title">CROCANTE JAPONES 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 71,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 69,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE NATURAL 5 KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2536</p>
+                        <h4 class="card-title">CROCANTE NATURAL 5 KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 71,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 69,50</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE NATURAL BALSAMO 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2232</p>
+                        <h4 class="card-title">CROCANTE NATURAL BALSAMO 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 139,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 135,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE VP BACON 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3815</p>
+                        <h4 class="card-title">CROCANTE VP BACON 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE VP C/ PIMENTA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3713</p>
+                        <h4 class="card-title">CROCANTE VP C/ PIMENTA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE VP C/ SALSA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3712</p>
+                        <h4 class="card-title">CROCANTE VP C/ SALSA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: SC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE VP JAPONES 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3714</p>
+                        <h4 class="card-title">CROCANTE VP JAPONES 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="CROCANTE VP NATURAL 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3715</p>
+                        <h4 class="card-title">CROCANTE VP NATURAL 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="MACADAMIA TORRADA S/ SAL 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4135</p>
+                        <h4 class="card-title">MACADAMIA TORRADA S/ SAL 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 1.287,50</span><small>Débito /
+                                    Crédito</small></div>
+                            <div class="price"><span class="price-value">R$ 1.250,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="MACADAMIA TORRADA S/ SAL 1KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4021</p>
+                        <h4 class="card-title">MACADAMIA TORRADA S/ SAL 1KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 129,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 125,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 1.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="MIX DE CASTANHA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2852</p>
+                        <h4 class="card-title">MIX DE CASTANHA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 335,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 325,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="MIX DE CASTANHA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3601</p>
+                        <h4 class="card-title">MIX DE CASTANHA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 669,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 650,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="NOZES MARIPOSA 10KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3093</p>
+                        <h4 class="card-title">NOZES MARIPOSA 10KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 711,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 690,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 10.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="NOZES MARIPOSA 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2632</p>
+                        <h4 class="card-title">NOZES MARIPOSA 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 357,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 347,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="NOZES QUARTOS 12KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 4179</p>
+                        <h4 class="card-title">NOZES QUARTOS 12KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 642,50</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 624,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: CX • Peso: 12.0</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&q=60&auto=format&fit=crop"
+                        alt="NOZES QUARTOS 5KG">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2385</p>
+                        <h4 class="card-title">NOZES QUARTOS 5KG</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 270,00</span><small>Débito / Crédito</small>
+                            </div>
+                            <div class="price"><span class="price-value">R$ 262,00</span><small>À vista</small></div>
+                        </div>
+                        <div class="payment">Un: PC • Peso: 5.0</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Outras seções com estrutura similar (exemplos simples) -->
+        <section id="arroz" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Arroz</h2>
+                    <p class="category-sub">Tipos de arroz e embalagens</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=60&auto=format&fit=crop"
+                        alt="Arroz">
+                    <div class="card-body">
+                        <p class="ref">REF.: 1001</p>
+                        <h4 class="card-title">Arroz Branco Tipo 1</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 120,00</span><small>10KG</small></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1542444459-db6d3b9f0c6f?w=800&q=60&auto=format&fit=crop"
+                        alt="Arroz Integral">
+                    <div class="card-body">
+                        <p class="ref">REF.: 1002</p>
+                        <h4 class="card-title">Arroz Integral</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 140,00</span><small>10KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sucrilhos" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Sucrilhos</h2>
+                    <p class="category-sub">Cereais matinais e produtos afins</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card placeholder">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=800&q=60&auto=format&fit=crop"
+                        alt="Sucrilhos">
+                    <div class="card-body">
+                        <p class="ref">REF.: 2002</p>
+                        <h4 class="card-title">Cereal Matinal Sortido</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 45,00</span><small>1KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="chas" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Chás</h2>
+                    <p class="category-sub">Ervas, infusões e blends</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?w=800&q=60&auto=format&fit=crop"
+                        alt="Chá de ervas">
+                    <div class="card-body">
+                        <p class="ref">REF.: 3001</p>
+                        <h4 class="card-title">Chá de Camomila</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 25,00</span><small>250g</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="farinhas" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Farinhas</h2>
+                    <p class="category-sub">Farinhas diversas e misturas</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1551218808-94e220e084d2?w=800&q=60&auto=format&fit=crop"
+                        alt="Farinhas">
+                    <div class="card-body">
+                        <p class="ref">REF.: 5001</p>
+                        <h4 class="card-title">Farinha de Trigo Tipo 1</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 48,00</span><small>5KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="graos" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Grãos</h2>
+                    <p class="category-sub">Feijão, milho, ervilhas e afins</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1572441710266-0d1a7b0901a9?w=800&q=60&auto=format&fit=crop"
+                        alt="Grãos">
+                    <div class="card-body">
+                        <p class="ref">REF.: 6001</p>
+                        <h4 class="card-title">Feijão Carioca</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 95,00</span><small>10KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Panificações -->
+        <section id="panificacoes" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Panificações</h2>
+                    <p class="category-sub">Produtos para panificação e confeitaria</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1511690743698-d9d85f2fbf38?w=800&q=60&auto=format&fit=crop"
+                        alt="Pães">
+                    <div class="card-body">
+                        <p class="ref">REF.: 7001</p>
+                        <h4 class="card-title">Farinha Especial para Pães</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 60,00</span><small>5KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Especiarias -->
+        <section id="especiarias" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Especiarias</h2>
+                    <p class="category-sub">Temperos, condimentos e especiarias</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?w=800&q=60&auto=format&fit=crop"
+                        alt="Especiarias">
+                    <div class="card-body">
+                        <p class="ref">REF.: 8001</p>
+                        <h4 class="card-title">Pimenta-do-reino moída</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 32,00</span><small>500g</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Frutas -->
+        <section id="frutas" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Frutas</h2>
+                    <p class="category-sub">Frutas secas e desidratadas</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1502741126161-b048400d9f00?w=800&q=60&auto=format&fit=crop"
+                        alt="Frutas secas">
+                    <div class="card-body">
+                        <p class="ref">REF.: 9001</p>
+                        <h4 class="card-title">Damasco Seco</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 70,00</span><small>5KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Massas -->
+        <section id="massas" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Massas</h2>
+                    <p class="category-sub">Massas secas e frescas</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1542444459-db6d3b9f0c6f?w=800&q=60&auto=format&fit=crop"
+                        alt="Massas">
+                    <div class="card-body">
+                        <p class="ref">REF.: 10001</p>
+                        <h4 class="card-title">Macarrão Sêmola</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 12,00</span><small>500g</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sementes -->
+        <section id="sementes" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Sementes</h2>
+                    <p class="category-sub">Sementes para consumo e culinária</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1508747703725-71979235a1c5?w=800&q=60&auto=format&fit=crop"
+                        alt="Sementes">
+                    <div class="card-body">
+                        <p class="ref">REF.: 11001</p>
+                        <h4 class="card-title">Semente de Chia</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 55,00</span><small>1KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Produtos Naturais -->
+        <section id="produtos-naturais" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Produtos Naturais</h2>
+                    <p class="category-sub">Chás, grãos e itens naturais</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1471357674240-e1a485acb3e1?w=800&q=60&auto=format&fit=crop"
+                        alt="Produtos naturais">
+                    <div class="card-body">
+                        <p class="ref">REF.: 12001</p>
+                        <h4 class="card-title">Mix Natural</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 90,00</span><small>2KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Refrigerantes e Sucos -->
+        <section id="refrigerantes-e-sucos" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Refrigerantes e Sucos</h2>
+                    <p class="category-sub">Bebidas engarrafadas e enlatadas</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1505575967451-9b9f6f66f5b2?w=800&q=60&auto=format&fit=crop"
+                        alt="Refrigerantes">
+                    <div class="card-body">
+                        <p class="ref">REF.: 13001</p>
+                        <h4 class="card-title">Refrigerante Lata 350ml</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 3,50</span><small>un</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gomas Prontas -->
+        <section id="gomas-prontas" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Gomas Prontas</h2>
+                    <p class="category-sub">Gomas, balas e confeitos</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1606312619348-5b1b3f4f6e9b?w=800&q=60&auto=format&fit=crop"
+                        alt="Gomas">
+                    <div class="card-body">
+                        <p class="ref">REF.: 14001</p>
+                        <h4 class="card-title">Goma Sortida</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 35,00</span><small>1KG</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diversos -->
+        <section id="diversos" class="products category-section">
+            <header class="category-header">
+                <div class="category-text">
+                    <h2>Diversos</h2>
+                    <p class="category-sub">Outros produtos e novidades</p>
+                </div>
+            </header>
+            <div class="cards-grid">
+                <div class="card">
+                    <img class="card-img"
+                        src="https://images.unsplash.com/photo-1517263904808-5dcf02fa2f4f?w=800&q=60&auto=format&fit=crop"
+                        alt="Diversos">
+                    <div class="card-body">
+                        <p class="ref">REF.: 15001</p>
+                        <h4 class="card-title">Produto Diverso Exemplo</h4>
+                        <div class="prices">
+                            <div class="price"><span class="price-value">R$ 99,00</span><small>un</small></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <div class="button-section">
+        <button id="prev-section-btn" class="floating-prev" aria-label="Seção anterior">ANTERIOR</button>
+        <button id="search-focus-btn" class="floating-search" aria-label="Ir para busca">🔍</button>
+        <button id="next-section-btn" class="floating-next" aria-label="Próxima seção">PRÓXIMA</button>
+    </div>
+
+    <script>
+        (function () {
+            const nextBtn = document.getElementById('next-section-btn');
+            const prevBtn = document.getElementById('prev-section-btn');
+            const searchFocusBtn = document.getElementById('search-focus-btn');
+            const buttonSection = document.querySelector('.button-section');
+            const sections = Array.from(document.querySelectorAll('section.category-section'));
+            const footer = document.querySelector('.site-footer');
+            if ((!nextBtn && !prevBtn && !searchFocusBtn) || sections.length === 0) return;
+
+            function currentIndex() {
+                const mid = window.innerHeight / 3;
+                let idx = sections.findIndex(s => {
+                    const r = s.getBoundingClientRect();
+                    return r.top <= mid && r.bottom > mid;
+                });
+                if (idx === -1) {
+                    // fallback: nearest to top
+                    let min = Infinity; idx = 0;
+                    sections.forEach((s, i) => { const d = Math.abs(s.getBoundingClientRect().top); if (d < min) { min = d; idx = i; } });
+                }
+                return idx;
+            }
+
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => {
+                    const i = currentIndex();
+                    const next = sections[(i + 1) % sections.length];
+                    if (next) next.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => {
+                    const i = currentIndex();
+                    const prev = sections[(i - 1 + sections.length) % sections.length];
+                    if (prev) prev.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                });
+            }
+
+            if (searchFocusBtn) {
+                searchFocusBtn.addEventListener('click', () => {
+                    const searchInput = document.getElementById('search-input');
+                    if (searchInput) {
+                        searchInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        searchInput.focus();
+                    }
+                });
+            }
+
+            // hide buttons if only one section
+            if (sections.length <= 1) {
+                if (buttonSection) buttonSection.style.display = 'none';
+            }
+
+            // Hide buttons when footer is visible
+            if (footer) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        const visible = entry.isIntersecting;
+                        if (buttonSection) buttonSection.style.display = visible ? 'none' : '';
+                    });
+                }, { threshold: 0.1 }); // Trigger when 10% of footer is visible
+                observer.observe(footer);
+            }
+
+            // Search functionality
+            const searchInput = document.getElementById('search-input');
+            const cards = Array.from(document.querySelectorAll('.card'));
+            const categoryHeaders = document.querySelectorAll('.category-header');
+            const main = document.querySelector('main');
+            const searchResults = document.getElementById('search-results');
+            if (searchInput) {
+                searchInput.addEventListener('input', (e) => {
+                    const query = e.target.value.toLowerCase().trim();
+                    if (query) {
+                        // Hide main and show search results
+                        main.style.display = 'none';
+                        searchResults.style.display = 'grid';
+                        // Clear previous results
+                        searchResults.innerHTML = '';
+                        // Filter and append matching cards
+                        cards.forEach(card => {
+                            const title = card.querySelector('.card-title').textContent.toLowerCase();
+                            if (title.includes(query)) {
+                                const clone = card.cloneNode(true);
+                                searchResults.appendChild(clone);
+                            }
+                        });
+                        // If no results, show message
+                        if (searchResults.children.length === 0) {
+                            const noResults = document.createElement('p');
+                            noResults.textContent = 'Item não encontrado!';
+                            noResults.style.textAlign = 'center';
+                            noResults.style.fontSize = '18px';
+                            noResults.style.color = '#666';
+                            noResults.style.gridColumn = '1 / -1'; // Span full width in grid
+                            searchResults.appendChild(noResults);
+                        }
+                    } else {
+                        // Show main and hide search results
+                        main.style.display = '';
+                        searchResults.style.display = 'none';
+                        searchResults.innerHTML = '';
+                    }
+                });
+            }
+        })();
+    </script>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>RUA BENJAMIM DE OLIVEIRA, 144 - BRÁS | (11) 3313-2333</p>
+        </div>
+    </footer>
+</body>
+
+</html>
