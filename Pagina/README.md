@@ -58,9 +58,11 @@ Este é um catálogo de produtos responsivo e interativo, desenvolvido em HTML, 
 
 ## Estrutura de Arquivos
 
-- `index.html`: Página principal com HTML, CSS inline e JavaScript.
-- `styles.css`: Estilos CSS para layout, responsividade e visual.
+- `index.html`: Página principal com apenas HTML estrutural, links para CSS e JS.
+- `styles.css`: Arquivo CSS separado com todos os estilos.
+- `script.js`: Arquivo JavaScript separado com toda a lógica interativa.
 - `pagina/` (pasta): Contém imagens usadas nos fundos (ex.: logo, headers).
+- `scripts/`: Scripts Python para processamento de dados.
 
 ## Tecnologias Utilizadas
 

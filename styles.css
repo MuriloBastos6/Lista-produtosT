@@ -49,7 +49,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./Pagina/loja.jpeg') center/cover no-repeat;
+    background: url('./Pagina/loja-Bourached.webp') center/cover no-repeat;
     opacity: 0.5;
     z-index: -1;
 }
@@ -79,6 +79,74 @@ body {
 .search-container {
     padding: 20px 0;
     text-align: center;
+}
+
+.category-nav {
+    max-width: 1100px;
+    margin: 0 auto 24px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+    padding: 0 24px;
+}
+
+.category-btn {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 16px;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    overflow: hidden;
+    min-height: 64px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.category-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.2));
+    transition: opacity 180ms ease;
+}
+
+.category-btn:hover::before,
+.category-btn:focus-visible::before {
+    opacity: 0.7;
+}
+
+.category-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+}
+
+.category-btn span,
+.category-btn {
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width:700px) {
+    .category-nav {
+        display: flex;
+        overflow-x: auto;
+        padding: 0 16px;
+        gap: 10px;
+        scroll-snap-type: x proximity;
+    }
+
+    .category-btn {
+        flex: 0 0 auto;
+        min-width: 160px;
+        scroll-snap-align: center;
+    }
 }
 
 #search-results {
@@ -203,7 +271,7 @@ body {
 /* full-bleed hero header for each category (refined visuals) */
 /* Simplified category header: transparent so the page background is continuous */
 .category-header {
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(58, 160, 216, 0.4) 100%);
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4) 0%, rgba(58, 160, 216, 0.3) 100%);
     color: var(--muted);
     padding: 18px;
     margin: 18px 0;
@@ -228,10 +296,168 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('./loja.jpeg') center/cover no-repeat;
-    opacity: 0.3;
+    background: url('./Pagina/loja.jpeg') center/cover no-repeat;
+    opacity: 0.6;
     z-index: -1;
 }
+
+/* Imagens únicas para cada categoria */
+#promocao .category-header::before {
+    background-image: url('./imagens/dreamina-2025-12-17-5894-EU\ quero\ um\ banner\ no\ estilo\ da\ imagem\ a....jpeg');
+}
+
+#amendoins .category-header::before {
+    background-image: url('./Pagina/amendoins.jpeg');
+}
+
+#arroz .category-header::before {
+    background-image: url('./Pagina/arroz.jpeg');
+}
+
+#sucrilhos .category-header::before {
+    background-image: url('./Pagina/cereais.jpeg');
+}
+
+#chas .category-header::before {
+    background-image: url('./Pagina/chas.jpeg');
+}
+
+#farinhas .category-header::before {
+    background-image: url('./Pagina/farinhas.jpeg');
+}
+
+#graos .category-header::before {
+    background-image: url('./Pagina/feijoes.jpeg');
+}
+
+#panificacoes .category-header::before {
+    background-image: url('./Pagina/panificacoes.jpeg');
+}
+
+#especiarias .category-header::before {
+    background-image: url('./Pagina/especiarias.jpeg');
+}
+
+#frutas .category-header::before {
+    background-image: url('./Pagina/frutas.jpeg');
+}
+
+#massas .category-header::before {
+    background-image: url('./Pagina/massas.jpg');
+}
+
+#sementes .category-header::before {
+    background-image: url('./Pagina/sementes.jpeg');
+}
+
+#produtos-naturais .category-header::before {
+    background-image: url('./Pagina/dreamina-2025-12-05-9549-Healthy\ breakfast\ scene\,\ wooden\ table\ wi....jpeg');
+}
+
+#refrigerantes-e-sucos .category-header::before {
+    background-image: url('./Pagina/dreamina-2025-12-05-6975-Reference\ Image\ 1\,\ Reference\ Image\ 2\,\ ut....jpeg');
+}
+
+#gomas-prontas .category-header::before {
+    background-image: url('./Pagina/Goma.png');
+}
+
+#oleo-vegetal .category-header::before {
+    background-image: url('./imagens/dreamina-2025-12-17-9583-Tendo\ como\ referência\ os\ produtos\ da\ Ima....jpeg');
+}
+
+#salgadinhos-snacks .category-header::before {
+    background-image: url('./Pagina/dreamina-2025-12-05-2693-Composição\ vista\ de\ cima\ \(flat\ lay\)\ sobr....jpeg');
+}
+
+#doces .category-header::before {
+    background-image: url('./Pagina/dreamina-2025-12-05-7826-Jelly\ beans\,\ cookie\ pieces\,\ and\ milk\ can....jpeg');
+}
+
+#potes .category-header::before {
+    background-image: url('./Pagina/dreamina-2025-12-05-6780-Visão\ de\ cima\ \(flat\ lay\)\ sobre\ superfíci....jpeg');
+}
+
+#diversos .category-header::before {
+    background-image: url('./Pagina/diversos.jpg');
+}
+
+.category-btn[data-target="promocao"] {
+    background-image: url('./imagens/dreamina-2025-12-17-5894-EU\ quero\ um\ banner\ no\ estilo\ da\ imagem\ a....jpeg');
+}
+
+.category-btn[data-target="amendoins"] {
+    background-image: url('./Pagina/amendoins.jpeg');
+}
+
+.category-btn[data-target="arroz"] {
+    background-image: url('./Pagina/arroz.jpeg');
+}
+
+.category-btn[data-target="sucrilhos"] {
+    background-image: url('./Pagina/cereais.jpeg');
+}
+
+.category-btn[data-target="chas"] {
+    background-image: url('./Pagina/chas.jpeg');
+}
+
+.category-btn[data-target="farinhas"] {
+    background-image: url('./Pagina/farinhas.jpeg');
+}
+
+.category-btn[data-target="graos"] {
+    background-image: url('./Pagina/feijoes.jpeg');
+}
+
+.category-btn[data-target="panificacoes"] {
+    background-image: url('./Pagina/panificacoes.jpeg');
+}
+
+.category-btn[data-target="especiarias"] {
+    background-image: url('./Pagina/especiarias.jpeg');
+}
+
+.category-btn[data-target="frutas"] {
+    background-image: url('./Pagina/frutas.jpeg');
+}
+
+.category-btn[data-target="sementes"] {
+    background-image: url('./Pagina/sementes.jpeg');
+}
+
+.category-btn[data-target="produtos-naturais"] {
+    background-image: url('./Pagina/dreamina-2025-12-05-9549-Healthy\ breakfast\ scene,\ wooden\ table\ wi....jpeg');
+}
+
+.category-btn[data-target="refrigerantes-e-sucos"] {
+    background-image: url('./Pagina/dreamina-2025-12-05-6975-Reference\ Image\ 1,\ Reference\ Image\ 2,\ ut....jpeg');
+}
+
+.category-btn[data-target="oleo-vegetal"] {
+    background-image: url('./imagens/dreamina-2025-12-17-9583-Tendo\ como\ referência\ os\ produtos\ da\ Ima....jpeg');
+}
+
+.category-btn[data-target="gomas-prontas"] {
+    background-image: url('./Pagina/Goma.png');
+}
+
+.category-btn[data-target="salgadinhos-snacks"] {
+    background-image: url('./Pagina/dreamina-2025-12-05-2693-Composição\ vista\ de\ cima\ \(flat\ lay\)\ sobr....jpeg');
+}
+
+.category-btn[data-target="doces"] {
+    background-image: url('./Pagina/dreamina-2025-12-05-7826-Jelly\ beans,\ cookie\ pieces,\ and\ milk\ can....jpeg');
+}
+
+.category-btn[data-target="potes"] {
+    background-image: url('./Pagina/dreamina-2025-12-05-6780-Visão\ de\ cima\ \(flat\ lay\)\ sobre\ superfíci....jpeg');
+}
+
+.category-btn[data-target="diversos"] {
+    background-image: url('./Pagina/diversos.jpg');
+}
+
 
 .category-header h2 {
     margin: 0 0 6px 0;
@@ -365,6 +591,10 @@ body {
     height: 100%
 }
 
+.card-media {
+    margin: 0;
+}
+
 .card-img {
     width: 100%;
     height: 160px;
@@ -373,11 +603,12 @@ body {
 }
 
 .card-body {
-    padding: 12px;
+    padding: 16px 14px;
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    gap: 12px;
+    justify-content: flex-start
 }
 
 .ref {
@@ -387,11 +618,46 @@ body {
 }
 
 .card-title {
-    margin: 0 0 10px;
+    margin: 0;
     font-weight: 700;
     color: #2b2b2b
 }
 
+.variant-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+}
+
+.variant-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 10px 12px;
+    border-radius: 8px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    gap: 12px
+}
+
+.variant-price {
+    font-weight: 700;
+    color: #17543f;
+    font-size: 1rem;
+    white-space: nowrap
+}
+
+.variant-meta {
+    font-size: 0.85rem;
+    color: var(--muted);
+    text-align: right;
+    flex: 1
+}
+
+/* legacy support for cards still using the antigo layout */
 .prices {
     display: flex;
     gap: 10px;
@@ -552,4 +818,8 @@ body {
     .cta {
         padding: 8px 12px
     }
+}
+
+.hidden-by-search {
+    display: none !important;
 }
