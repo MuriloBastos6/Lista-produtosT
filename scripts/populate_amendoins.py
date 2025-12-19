@@ -303,10 +303,10 @@ def resolve_image_src(group: ProductGroup) -> str:
     return DEFAULT_IMAGE
 
 
-def build_card_node(soup: BeautifulSoup, group: ProductGroup) -> Tag:
+def build_card_node(soup: BeautifulSoup, group: ProductGroup, image_override: str | None = None) -> Tag:
     card = soup.new_tag('article', attrs={'class': 'card'})
 
-    image_src = resolve_image_src(group)
+    image_src = image_override or resolve_image_src(group)
     media = soup.new_tag('figure', attrs={'class': 'card-media'})
     img = soup.new_tag(
         'img', attrs={'class': 'card-img', 'src': image_src, 'alt': group.display})
@@ -346,6 +346,38 @@ def build_card_node(soup: BeautifulSoup, group: ProductGroup) -> Tag:
     return card
 
 
+def snapshot_image_sources(grid: Tag) -> tuple[dict[str, str], dict[str, str]]:
+    title_map: dict[str, str] = {}
+    code_map: dict[str, str] = {}
+    for card in grid.find_all('article', class_='card'):
+        title_tag = card.find('h4', class_='card-title')
+        img_tag = card.find('img', class_='card-img')
+        if not title_tag or not img_tag:
+            continue
+        src = img_tag.get('src', '').strip()
+        if not src:
+            continue
+        key = normalize_key(title_tag.get_text())
+        if key and key not in title_map:
+            title_map[key] = src
+
+        ref_tag = card.find('p', class_='ref')
+        if not ref_tag:
+            continue
+        ref_text = ref_tag.get_text(separator=' ', strip=True)
+        if not ref_text:
+            continue
+        for token in re.split(r'[,:;/]', ref_text):
+            token = clean_code(token)
+            if not token or not any(ch.isdigit() for ch in token):
+                continue
+            code_key = normalize_key(token)
+            if code_key and code_key not in code_map:
+                code_map[code_key] = src
+
+    return title_map, code_map
+
+
 def update_index(catalog: OrderedDict[str, CategoryData]) -> None:
     if not INDEX_PATH.exists():
         raise SystemExit('ERROR: index.html não encontrado')
@@ -365,6 +397,7 @@ def update_index(catalog: OrderedDict[str, CategoryData]) -> None:
             missing_sections.append(category_id)
             continue
 
+        title_map, code_map = snapshot_image_sources(grid)
         grid.clear()
 
         groups = [group for group in payload.groups.values() if group.variants]
@@ -372,7 +405,16 @@ def update_index(catalog: OrderedDict[str, CategoryData]) -> None:
             continue
 
         for group in groups:
-            card = build_card_node(soup, group)
+            key = normalize_key(group.display)
+            override_src = ''
+            for code in group.codes:
+                code_key = normalize_key(code)
+                if code_key in code_map:
+                    override_src = code_map[code_key]
+                    break
+            if not override_src:
+                override_src = title_map.get(key)
+            card = build_card_node(soup, group, override_src)
             grid.append(card)
             grid.append('\n')
 
