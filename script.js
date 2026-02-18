@@ -70,9 +70,20 @@
     const categoryHeaders = document.querySelectorAll('.category-header');
     const main = document.querySelector('main');
     const searchResults = document.getElementById('search-results');
+
+    function normalizeText(value) {
+        return value
+            .toLowerCase()
+            .normalize('NFD')
+            .replace(/[\u0300-\u036f]/g, '')
+            .replace(/[^a-z0-9\s]/g, ' ')
+            .replace(/\s+/g, ' ')
+            .trim();
+    }
+
     if (searchInput) {
         searchInput.addEventListener('input', (e) => {
-            const query = e.target.value.toLowerCase().trim();
+            const query = normalizeText(e.target.value);
             if (query) {
                 if (categoryNav) categoryNav.classList.add('hidden-by-search');
                 if (buttonSection) buttonSection.classList.add('hidden-by-search');
@@ -83,7 +94,7 @@
                 searchResults.innerHTML = '';
                 // Filter and append matching cards
                 cards.forEach(card => {
-                    const title = card.querySelector('.card-title').textContent.toLowerCase();
+                    const title = normalizeText(card.querySelector('.card-title').textContent);
                     if (title.includes(query)) {
                         const clone = card.cloneNode(true);
                         searchResults.appendChild(clone);
