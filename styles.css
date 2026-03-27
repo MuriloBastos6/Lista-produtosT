@@ -304,10 +304,6 @@ body {
 }
 
 /* Imagens únicas para cada categoria */
-#promocao .category-header::before {
-    background-image: url('Pagina/dreamina-2025-12-17-5894-EU\ quero\ um\ banner\ no\ estilo\ da\ imagem\ a....jpeg');
-}
-
 #amendoins .category-header::before {
     background-image: url('./Pagina/amendoins.jpeg');
 }
@@ -382,10 +378,6 @@ body {
 
 #diversos .category-header::before {
     background-image: url('./Pagina/diversos.jpg');
-}
-
-.category-btn[data-target="promocao"] {
-    background-image: url('Pagina/dreamina-2025-12-17-5894-EU\ quero\ um\ banner\ no\ estilo\ da\ imagem\ a....jpeg');
 }
 
 .category-btn[data-target="amendoins"] {
@@ -608,7 +600,6 @@ body {
     object-fit: contain;
     object-position: center;
     display: block
-    
 }
 
 .card-body {
